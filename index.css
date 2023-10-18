@@ -1,5 +1,5 @@
 .img01 {
-    background-image: url(/img/bg01.jpg);
+    background-image: url(bg01.jpg);
     background-position: 0 0;
     background-attachment: fixed;
     background-size: cover;
@@ -8,7 +8,7 @@
 }
 
 .img02 {
-    background-image: url(/img/bg02.jpg);
+    background-image: url(bg02.jpg);
     background-position: 0 0;
     background-attachment: fixed;
     background-size: cover;
@@ -17,7 +17,7 @@
 }
 
 .img03 {
-    background-image: url(/img/bg08.jpg);
+    background-image: url(bg08.jpg);
     background-position: 0 0;
     background-attachment: fixed;
     background-size: cover;
