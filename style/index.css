@@ -1,0 +1,80 @@
+.img01 {
+    background-image: url(/img/bg01.jpg);
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.img02 {
+    background-image: url(/img/bg02.jpg);
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.img03 {
+    background-image: url(/img/bg08.jpg);
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.bg-txt {
+    position: relative;
+    top: 300px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    border-right: 2px solid rgba(0, 0, 0, .75);
+}
+
+.txt {
+    padding: 20px;
+    font-size: 22px;
+    height: 200px;
+    line-height: 45px;
+    background-color: #7ccfe1;
+    color: #fff;
+}
+
+.img01 :first-child {
+    position: relative;
+    top: 40%;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.animation-typewriter {
+    animation: typewriter 1s steps(14) 1s 1 normal both,
+        blinkCursor 1s step-end infinite;
+
+}
+
+@keyframes typewriter {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 500px;
+    }
+}
+
+@keyframes blinkCursor {
+    50% {
+        border-right-color: transparent;
+    }
+}

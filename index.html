@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- <link rel="icon" type="image/x-icon" href="/img/favicon.ico"> -->
+    <link rel="stylesheet" href="/style/general.css">
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/index.css">
+    <!-- <link rel="stylesheet" href="/style/RWD.css"> -->
+    <style>
+        .active {
+            color: red;
+            font-weight: 700;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="header-title">
+            <a href="#" class="title-name">Home</a>
+        </div>
+
+        <div class="header-bar">
+            <ul>
+                <li><a href="index.html" class="active">首頁</a></li>
+                <li><a href="about.html">關於我</a></li>
+                <li><a href="project.html">影片 & 音樂</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <section>
+        <div class="img01">
+            <div class="bg-txt animation-typewriter">Welcome to my website!</div>
+        </div>
+        <div class="txt"></div>
+        <div class="img02">
+            <div class="bg-txt"></div>
+        </div>
+        <div class="txt"></div>
+        <div class="img03">
+            <div class="bg-txt"></div>
+        </div>
+
+    </section>
+
+    <script>
+        const items = document.querySelectorAll('li a');
+        items.forEach(item => {
+            item.addEventListener('click', () => {
+                document.querySelector('.active').classList.remove('active');
+                item.classList.add('active');
+            })
+        })
+    </script>
+</body>
+
+</html>

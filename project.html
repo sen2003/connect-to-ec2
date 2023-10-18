@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <!-- <link rel="icon" type="image/x-icon" href="/img/favicon.ico"> -->
+    <link rel="stylesheet" href="/style/general.css">
+    <link rel="stylesheet" href="/style/header.css">
+    <!-- <link rel="stylesheet" href="/style/RWD.css"> -->
+    <style>
+        h1 {
+            font-size: 30px;
+        }
+
+        .video_container {
+            position: absolute;
+            top: 25%;
+            left: 16%;
+        }
+
+        h3 {
+            margin: 10px;
+        }
+
+        .music_container {
+            position: absolute;
+            top: 30%;
+            left: 60%;
+        }
+
+        .active {
+            color: red;
+            font-weight: bold;
+        }
+
+        @media (max-width:1000px) {
+            h1 {
+                font-size: 15px;
+            }
+
+            iframe {
+                width: 320px;
+                height: 185px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-title">
+            <a href="#" class="title-name">Music & Video</a>
+        </div>
+
+        <div class="header-bar">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about.html">關於我</a></li>
+                <li><a href="project.html" class="active">影片 & 音樂</a></li>
+
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="video_container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VL6H6z_hI0E?si=18x99M9nAKQmpdiF"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="music_container">
+            <h3>YOASOBI-祝福</h3>
+            <audio src="/music/music01.mp3" autoplay controls></audio>
+        </div>
+
+    </section>
+
+    <script>
+        const items = document.querySelectorAll('li a');
+        items.forEach(item => {
+            item.addEventListener('click', () => {
+                document.querySelector('.active').classList.remove('active');
+                item.classList.add('active');
+            })
+        })
+    </script>
+</body>
+
+</html>

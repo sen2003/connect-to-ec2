@@ -1,0 +1,47 @@
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: #1f1f1f;
+    width: 100%;
+    z-index: 100;
+}
+
+.header-title {
+    padding: 32px 300px;
+    border-bottom: 1px solid #fff;
+}
+
+.header-bar {
+    padding: 18px 276px;
+}
+
+.title-name {
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+
+header ul {
+    display: flex;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+
+header ul li a:hover {
+    color: red;
+}

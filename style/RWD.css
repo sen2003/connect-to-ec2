@@ -1,0 +1,57 @@
+@media (max-width:1000px) {
+    header {
+
+        background-color: #1f1f1f;
+        width: 100%;
+
+    }
+
+    .header-title {
+        padding: 14px 60px;
+    }
+
+    .title-name {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 4px;
+    }
+
+    .header-bar {
+        padding: 12px 55px;
+    }
+
+    header ul li a {
+        font-size: 10px;
+        text-decoration: none;
+        color: #fff;
+        padding: 0 5px;
+        border-radius: 20px;
+    }
+
+    .img01 :first-child {
+        position: relative;
+        top: 20%;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+
+
+
+    @keyframes typewriter {
+        from {
+            width: 0px;
+        }
+
+        to {
+            width: 260px;
+        }
+    }
+
+    @keyframes blinkCursor {
+        50% {
+            border-right-color: transparent;
+        }
+    }
+}
